@@ -5,18 +5,33 @@
   "scripts": {
     "dev": "electron .",
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "electron": "^37.2.2"
-  },
-    "devDependencies": {
+  "description": "Aplicación de escritorio hecha con Electron",
+  "devDependencies": {
+    "electron": "^37.2.2",
+    "electron-builder": "^26.0.12",
     "standard": "^17.1.2"
   },
   "eslintConfig": {
     "extends": "standard"
+  },
+  "build": {
+    "appId": "com.mande.esquivaCochesApp",
+    "productName": "esquivaCoches",
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true
+    }
   }
 }

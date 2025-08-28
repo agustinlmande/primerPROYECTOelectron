@@ -12,8 +12,8 @@ playerImg.style.transform = 'scale(8.5)';
 const obstacleImg = new Image();
 obstacleImg.src = 'images/cars/carRED.png';
 
-const canvas = document.getElementById('gameCanvas');
-const ctx = canvas.getContext('2d');
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
 
 const laneCount = 3;
 const laneWidth = canvas.width / laneCount;

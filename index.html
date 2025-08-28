@@ -15,9 +15,17 @@
     <title>ESQUIVA AUTOS</title>
   </head>
   <body>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-    <script src="./renderer.js"></script>
-</html>
+    <!--
+      Canvas principal donde se dibuja el juego.
+      El atributo 'id' permite acceder al canvas desde JavaScript.
+      'width' y 'height' definen el tamaño del área de juego.
+    -->
+    <canvas id="gameCanvas" width="1366" height="768"></canvas>
 
+    <!--
+      Se incluye el archivo renderer.js, que contiene la lógica y el renderizado del juego.
+      Este script accede al canvas y dibuja los elementos del juego.
+    -->
+    <script src="./renderer.js"></script>
   </body>
- 
+</html>
